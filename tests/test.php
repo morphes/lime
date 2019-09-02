@@ -1,7 +1,8 @@
 <?php 
-require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
+require_once __DIR__ . '/../vendor/autoload.php';
 use Lime\Request;
 $request = new Request();
-var_dump($request->checkInstallation());
+
+$items = [];
+print_r($request->order($items));
 die();
-echo Request::test();
